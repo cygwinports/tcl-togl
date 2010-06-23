@@ -12,4 +12,3 @@ PATCH_URI="
 "
 
 CFLAGS+=" -I."
-CYGCONF_ARGS="--includedir=${TCL_INCLUDEDIR}"
