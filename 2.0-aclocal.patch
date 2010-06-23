@@ -1,0 +1,13 @@
+We can't DISTCLEANFILES aclocal.m4 because of the subsequent macro.
+
+--- origsrc/Togl2.0/aclocal.m4	2007-11-09 01:35:37.000000000 -0600
++++ src/Togl2.0/aclocal.m4	2010-06-22 21:57:15.605874700 -0500
+@@ -2,7 +2,7 @@
+ # Include the TEA standard macro set
+ #
+ 
+-builtin(include,tclconfig/tcl.m4)
++builtin(include,/usr/share/aclocal/tcl-tea.m4)
+ 
+ #
+ # Add here whatever m4 macros you want to define for your package

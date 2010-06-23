@@ -1,0 +1,15 @@
+ORIG_PN="Togl"
+inherit tcl
+
+DESCRIPTION="Tk OpenGL rendering widget"
+HOMEPAGE="http://togl.sourceforge.net/"
+SRC_URI="mirror://sourceforge/togl/${ORIG_PN}${PV}-src.tar.gz"
+SRC_DIR=${ORIG_PN}${PV}
+
+PATCH_URI="
+	2.0-aclocal.patch
+	2.0-vpath.patch
+"
+
+CFLAGS+=" -I."
+CYGCONF_ARGS="--includedir=${TCL_INCLUDEDIR}"
