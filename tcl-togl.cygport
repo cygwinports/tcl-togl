@@ -2,7 +2,7 @@ inherit tcl
 
 NAME="tcl-togl"
 VERSION=2.0
-RELEASE=2
+RELEASE=3
 CATEGORY="Tcl"
 SUMMARY="Tk OpenGL rendering widget"
 DESCRIPTION="Togl is a Tk widget for OpenGL rendering. Togl does almost no OpenGL
@@ -16,5 +16,11 @@ PATCH_URI="
 	2.0-aclocal.patch
 	2.0-vpath.patch
 "
+
+PKG_NAMES="${NAME} ${NAME}-devel"
+tcl_togl_REQUIRES="tcl tcl-tk"
+tcl_togl_CONTENTS="usr/lib/Togl2.0/ usr/share/doc/"
+tcl_togl_devel_REQUIRES="libGL-devel tcl-devel tcl-tk-devel ${NAME}"
+tcl_togl_devel_CONTENTS="usr/include/ usr/lib/libToglstub2.0.a"
 
 CFLAGS+=" -I."
