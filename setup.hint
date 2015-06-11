@@ -1,7 +1,0 @@
-category: X11
-requires: libgcc1 libGL1 libX11_6 libXmu6 tcl tcl-tk
-sdesc: "Tk OpenGL rendering widget"
-ldesc: "Togl is a Tk widget for OpenGL rendering. Togl does almost no OpenGL
-drawing itself, instead it manages OpenGL drawing by calling various Tcl
-commands (a.k.a., callback functions). Those commands can be C functions
-that call OpenGL (in)directly or another Tcl package."
